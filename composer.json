@@ -3,7 +3,7 @@
     "type": "library",
     "keywords": ["laravel"],
     "require": {
-        "supervisorphp/supervisor": "dev-master",
+        "supervisorphp/supervisor": "^3.0",
         "zendframework/zend-xmlrpc": "^2.6",
         "illuminate/support": "^5.6"
     },
@@ -14,7 +14,6 @@
             "email": "wuweixin@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Wuwx\\LaravelSupervisor\\": "src/"
