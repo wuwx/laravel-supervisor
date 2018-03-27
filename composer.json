@@ -1,0 +1,33 @@
+{
+    "name": "wuwx/laravel-supervisor",
+    "type": "library",
+    "keywords": ["laravel"],
+    "require": {
+        "supervisorphp/supervisor": "dev-master",
+        "zendframework/zend-xmlrpc": "^2.6",
+        "illuminate/support": "^5.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wuwx",
+            "email": "wuweixin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Wuwx\\LaravelSupervisor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wuwx\\LaravelSupervisor\\SupervisorServiceProvider"
+            ],
+            "aliases": {
+                "Supervisor": "Wuwx\\LaravelSupervisor\\SupervisorFacade"
+            }
+        }
+    }
+}
